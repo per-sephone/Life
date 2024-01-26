@@ -1,3 +1,5 @@
+// life.rs
+
 /// Return `true` iff all cells are off.
 pub fn done(fb: &[[u8; 5]; 5]) -> bool {
     fb.iter().all(|&row| row.iter().all(|&v| v == 0))
