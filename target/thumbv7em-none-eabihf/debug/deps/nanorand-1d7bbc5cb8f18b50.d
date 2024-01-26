@@ -1,0 +1,11 @@
+/Users/persephone/Desktop/CS 510 Embedded Rust/Life/target/thumbv7em-none-eabihf/debug/deps/libnanorand-1d7bbc5cb8f18b50.rmeta: /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/lib.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto/chacha.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/entropy.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/gen.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand/pcg64.rs
+
+/Users/persephone/Desktop/CS 510 Embedded Rust/Life/target/thumbv7em-none-eabihf/debug/deps/nanorand-1d7bbc5cb8f18b50.d: /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/lib.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto/chacha.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/entropy.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/gen.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand.rs /Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand/pcg64.rs
+
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/lib.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/crypto/chacha.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/entropy.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/gen.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand.rs:
+/Users/persephone/.cargo/registry/src/index.crates.io-6f17d22bba15001f/nanorand-0.7.0/src/rand/pcg64.rs:
