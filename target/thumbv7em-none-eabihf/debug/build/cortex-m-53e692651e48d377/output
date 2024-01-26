@@ -1,0 +1,6 @@
+cargo:rustc-link-lib=static=cortex-m
+cargo:rustc-link-search=/Users/persephone/Desktop/CS 510 Embedded Rust/Life/target/thumbv7em-none-eabihf/debug/build/cortex-m-53e692651e48d377/out
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv7m
+cargo:rustc-cfg=armv7em
+cargo:rustc-cfg=has_fpu

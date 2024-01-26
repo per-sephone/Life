@@ -156,8 +156,9 @@ dependencies = [
  "cortex-m",
  "cortex-m-rt",
  "microbit-v2",
+ "nanorand",
  "panic-rtt-target",
- "rtt-target 0.4.0",
+ "rtt-target 0.5.0",
 ]
 
 [[package]]
@@ -179,6 +180,12 @@ checksum = "a9895242259950730bc112623e4a2e37345dc51ddb5fc8878c110489260d84e7"
 dependencies = [
  "microbit-common",
 ]
+
+[[package]]
+name = "nanorand"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a51313c5820b0b02bd422f4b44776fbf47961755c74ce64afc73bfad10226c3"
 
 [[package]]
 name = "nb"
@@ -295,9 +302,9 @@ dependencies = [
 
 [[package]]
 name = "rtt-target"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3afa12c77ba1b9bf560e4039a9b9a08bb9cde0e9e6923955eeb917dd8d5cf303"
+checksum = "10b34c9e6832388e45f3c01f1bb60a016384a0a4ad80cdd7d34913bed25037f0"
 dependencies = [
  "critical-section 1.1.1",
  "ufmt-write",

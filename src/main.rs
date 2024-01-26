@@ -1,11 +1,23 @@
 #![no_main]
 #![no_std]
 
-use panic_rtt_target as _;
-use rtt_target::{rprintln, rtt_init_print};
+mod life;
 
 use cortex_m_rt::entry;
-use microbit::board::Board;
+#[rustfmt::skip]
+use microbit::{
+    board::Board,
+    display::blocking::Display,
+    hal::{
+        prelude::*,
+        pac::TIMER1,
+        timer::Timer,
+    },
+};
+use nanorand::{pcg64::Pcg64, Rng, SeedableRng};
+use panic_halt as _;
+
+
 
 #[entry]
 fn main() -> ! {
