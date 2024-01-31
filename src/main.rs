@@ -11,7 +11,7 @@ use panic_rtt_target as _;
 use rtt_target::{rprintln, rtt_init_print};
 
 use cortex_m_rt::entry;
-use nanorand::{Rng, SeedableRng, pcg64::Pcg64,};
+use nanorand::{Rng, SeedableRng, pcg64::Pcg64};
 
 use microbit::{
     board::Board, 
@@ -23,14 +23,8 @@ use microbit::{
     }
 };
 
-
-
-fn generate_random_seed(rng: &mut HWRng) -> u128{
-    rng.random_u64() as u128
-}
-
 fn generate_random_board(led_display: &mut [[u8; 5]; 5], rng: &mut HWRng) {
-    let mut rand = nanorand::Pcg64::new_seed(generate_random_seed(rng));
+    let mut rand = nanorand::Pcg64::new_seed(rng.random_u64() as u128);
     
     for row in 0..5 {
         for col in 0..5 {
@@ -53,7 +47,6 @@ fn complement(led_display: &mut [[u8; 5]; 5]) {
         }
     }
 }
-
 
 #[entry]
 fn main() -> ! {
