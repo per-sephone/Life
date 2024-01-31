@@ -1,1 +1,0 @@
-/Users/persephone/Desktop/CS\ 510\ Embedded\ Rust/Life/target/thumbv7em-none-eabihf/release/mb2-template: /Users/persephone/Desktop/CS\ 510\ Embedded\ Rust/Life/src/life.rs /Users/persephone/Desktop/CS\ 510\ Embedded\ Rust/Life/src/main.rs

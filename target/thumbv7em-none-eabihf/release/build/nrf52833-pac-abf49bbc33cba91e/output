@@ -1,3 +1,0 @@
-cargo:rustc-link-search=/Users/persephone/Desktop/CS 510 Embedded Rust/Life/target/thumbv7em-none-eabihf/release/build/nrf52833-pac-abf49bbc33cba91e/out
-cargo:rerun-if-changed=device.x
-cargo:rerun-if-changed=build.rs
