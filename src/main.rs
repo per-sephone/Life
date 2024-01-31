@@ -22,22 +22,21 @@ use microbit::{
 fn generate_random_board(led_display: &mut [[u8; 5]; 5], rng: &mut HWRng) {
     let mut rand = Pcg64::new_seed(rng.random_u64() as u128);
 
-    for row in led_display.iter_mut().take(5) {
-        for col in row.iter_mut().take(5) {
+    for (_, row) in led_display.iter_mut().enumerate().take(5) {
+        for (_, cell) in row.iter_mut().enumerate().take(5)  {
             let b: bool = rand.generate();
-            led_display[row][col] = b as u8;
+            *cell = b as u8;
         }
     }
 }
 
 fn complement(led_display: &mut [[u8; 5]; 5]) {
-    for row in 0..5 {
-        for col in 0..5 {
-            if led_display[row][col] == 0 {
-                led_display[row][col] = 1;
-            } else {
-                //led_display[row][col] == 1;
-                led_display[row][col] = 0;
+    for (_, row) in led_display.iter_mut().enumerate().take(5) {
+        for (_, cell) in row.iter_mut().enumerate().take(5)  {
+            if *cell == 0 {
+                *cell = 1;
+            } else { //*cell == 1;
+                *cell = 0;
             }
         }
     }
@@ -69,7 +68,7 @@ fn main() -> ! {
             delay.delay_ms(five_hundred_ms);
         }
 
-        if done(&mut led_display) {
+        if done(&led_display) {
             delay.delay(five_hundred_ms);
             generate_random_board(&mut led_display, &mut rng);
         }
