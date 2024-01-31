@@ -8,6 +8,7 @@ cortex-m-rt = "0.7"
 microbit-common = "0.13.0"
 microbit-v2 = "0.13.0"
 nanorand = { version = "0.7.0", default-features = false, features = ["pcg64"] }
+nrf52833-hal = "0.16.0"
 panic-halt = "0.2.0"
 rtt-target = "0.4"
 
