@@ -1,1 +1,9 @@
-# mb2-template: MicroBit 2 Rust embedded project template
+# [The Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) by Nora Luna
+
+This project was quite challenging to get started. I have no previous experience with embedded programming so I started with getting the blinky program working on the microbit. After I had that working, I used the template from course respository to see if I could modify what was already there to work for this assignment. The useful thing about the template is that it has most of the basic crates needed so there is less guesswork.
+
+The first thing I tried to program myself was getting some LEDs to light up on the display, not just blinky, but whichever lights I wanted. I reviewed some of the lecture to understand how to properly use the Display functionality in the microbit crate, but I was able to get any pattern of LEDs lit up. After I got that working, I integrated the life() functionality. After the lecture about buttons, I was easily able to get the button functionality working.
+
+The hardest part of this assignment was getting the random number generator to work correctly. At first, I used seed(1) but I was consistently getting the same "random" patterns. I decided to look at the `nrf52833-hal` crate that was suggested, but I had trouble there too. I was getting some error messages about multiple definitions of `Rng` and different versions of this crate. 
+
+I ended up searching the course repo and finding [this](https://github.com/pdx-cs-rust-embedded/mb2-rng) example of how to randomly generate numbers. I used this as a jumping off point to generate a random seed from the hardware's random number generator and then use the nanorand crate as suggested. I'm still not certain that this was the best approach, but the patterns generated seem random enough.
