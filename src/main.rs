@@ -22,7 +22,7 @@ use microbit::{
 /// Uses the PCG64 random number generator to produce random boolean values.
 /// These values are cast into u8 and assigned to the cells in the LED display.
 /// It uses the hardware's random number generator as a seed.
-/// 
+///
 /// # Arguments
 ///
 /// * `led_display` - A mutable reference to a 5x5 array representing the LED display.
@@ -32,7 +32,7 @@ fn generate_random_board(led_display: &mut [[u8; 5]; 5], rng: &mut HWRng) {
     let mut rand = Pcg64::new_seed(rng.random_u64() as u128);
 
     for (_, row) in led_display.iter_mut().enumerate().take(5) {
-        for (_, cell) in row.iter_mut().enumerate().take(5)  {
+        for (_, cell) in row.iter_mut().enumerate().take(5) {
             let b: bool = rand.generate();
             *cell = b as u8;
         }
@@ -48,10 +48,11 @@ fn generate_random_board(led_display: &mut [[u8; 5]; 5], rng: &mut HWRng) {
 
 fn complement(led_display: &mut [[u8; 5]; 5]) {
     for (_, row) in led_display.iter_mut().enumerate().take(5) {
-        for (_, cell) in row.iter_mut().enumerate().take(5)  {
+        for (_, cell) in row.iter_mut().enumerate().take(5) {
             if *cell == 0 {
                 *cell = 1;
-            } else { //*cell == 1;
+            } else {
+                //*cell == 1;
                 *cell = 0;
             }
         }
